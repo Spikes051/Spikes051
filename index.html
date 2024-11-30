@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Forms</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="page">
+    <div class="form-container">
+      <form class="form">
+        <h1 class="form__title">Create an article</h1>
+        <fieldset class="form__fieldset">
+          <label for="author-name" class="form__label">Author name</label>
+          <input
+            type="text"
+            class="form__input"
+            id="author-name"
+            name="authorName"
+            placeholder="ex. Name"
+            required
+          />
+          <label for="author-email" class="form__label">Author email</label>
+          <input
+            type="email"
+            class="form__input"
+            id="author-email"
+            name="authorEmail"
+            placeholder="ex. Gmail"
+            required
+          />
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <label for="article-title" class="form__label">Title</label>
+          <input
+            type="text"
+            class="form__input"
+            id="article-title"
+            name="articleTitle"
+            placeholder="Article title..."
+          />
+          <label for="article-text" class="form__label">Text</label>
+          <textarea
+            class="form__input form__input_text"
+            id="article-text"
+            name="articleText"
+            placeholder="Article text..."
+          ></textarea>
+          <label for="date" class="form__label">Publication date</label>
+          <input
+            type="date"
+            class="form__input form__input_date"
+            id="date"
+            name="date"
+          />
+          <label for="image" class="form__label">Image attachment</label>
+          <input
+            type="file"
+            class="form__input_attach"
+            id="image"
+            name="image"
+          />
+          <p class="form__label">Choose a topic</p>
+          <div class="form__radio-buttons">
+            <input
+              type="radio"
+              name="topic"
+              id="topic-choice-web"
+              value="web"
+              class="form__input form__input_type_radio"
+            />
+            <label for="topic-choice-web" class="form__label"
+              >Web Development</label
+            >
+            <input
+              type="radio"
+              name="topic"
+              id="topic-choice-music"
+              value="music"
+              class="form__input form__input_type_radio"
+            />
+            <label for="topic-choice-music" class="form__label">Music</label>
+            <input
+              type="radio"
+              name="topic"
+              id="topic-choice-other"
+              value="other"
+              class="form__input form__input_type_radio"
+            />
+            <label for="topic-choice-other" class="form__label">Other</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <label for="article-status" class="form__label">Article status</label>
+          <select
+            class="form__input form__input_type_select"
+            id="article-status"
+            name="articleStatus"
+          >
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+          </select>
+          <label for="text-size" class="form__label">Text size</label>
+          <input
+            type="number"
+            class="form__input"
+            min="14"
+            max="24"
+            id="text-size"
+            value="textSize"
+          />
+          <label for="text-width" class="form__label">Text width</label>
+          <input
+            type="range"
+            class="form__input form__input_type_range"
+            min="400"
+            max="1024"
+            id="text-width"
+            value="textWidth"
+          />
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <button type="submit" class="form__button">Submit</button>
+          <button type="reset" class="form__button">Reset</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
